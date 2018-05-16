@@ -45,12 +45,7 @@ footer {
     {
         flex: 1;
     }
-
-    .left-aside, .right-aside
-    {
-        flex-grow: 1;
-    }
-
+    
     .left-aside
     {
         order: 0;
