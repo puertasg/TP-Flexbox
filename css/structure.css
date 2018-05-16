@@ -46,6 +46,11 @@ footer {
         flex: 1;
     }
 
+    .left-aside, .right-aside
+    {
+        flex-grow: 1;
+    }
+
     .left-aside
     {
         order: 0;
@@ -54,6 +59,7 @@ footer {
     main 
     {
         order: 1;
+        flex-grow: 2;
     }
 
     .right-aside
