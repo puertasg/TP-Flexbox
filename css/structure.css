@@ -26,3 +26,89 @@ main {
 footer {
     background-color: lightgreen;
 }
+
+@media screen and (min-width:800px)
+{
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header
+    {
+        width: 100%;
+    }
+
+    .left-aside, main, .right-aside
+    {
+        flex:1;
+    }
+
+    .left-aside
+    {
+        order: 0;
+    }
+
+    main 
+    {
+        order: 1;
+    }
+
+    .right-aside
+    {
+        order: 2;
+    }
+
+    footer 
+    {
+        order: 3;
+        width:100%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px)
+{
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header
+    {
+        width: 100%;
+    }
+
+    main 
+    {
+        width: 100%;
+    }
+
+    .left-aside, .right-aside
+    {
+        flex:1;
+        width:50%;
+    }
+
+    .left-aside
+    {
+        order: 1;
+    }
+
+    .right-aside
+    {
+        order: 2;
+    }
+
+    footer 
+    {
+        order: 3;
+        width:100%;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    
+}
